@@ -1,6 +1,6 @@
 # FinTrack – Finance Dashboard
 ## Live Demo
-https://your-vercel-link.vercel.app
+[https://your-vercel-link.vercel.app](https://fin-track-iota-ivory.vercel.app/)
 ## Overview
 
 FinTrack is a frontend-focused finance dashboard built to help users track and understand their financial activity in a simple and intuitive way.
