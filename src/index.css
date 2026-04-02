@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --border: #e2e8f0;
+    --soft-surface: #f1f5f9;
+    --chart-axis: #475569;
+    --chart-area-opacity: 0.07;
+    --radius: 0.5rem;
+    --tooltip-bg: #ffffff;
+    --tooltip-border: #f3f4f6;
+
+    /* Button theming (used by src/components/ui/Button.jsx) */
+    --btn-primary-bg: #6366f1;
+    --btn-primary-hover: #4f46e5;
+    --btn-primary-text: #ffffff;
+
+    --btn-secondary-bg: #f1f5f9;
+    --btn-secondary-hover: #e2e8f0;
+    --btn-secondary-text: #475569;
+
+    --btn-outline-border: #e2e8f0;
+    --btn-outline-hover-bg: #f8fafc;
+    --btn-outline-text: #475569;
+
+    --btn-ghost-hover-bg: #f1f5f9;
+    --btn-ghost-text: #475569;
+
+    --btn-danger-bg: #ef4444;
+    --btn-danger-hover: #dc2626;
+    --btn-danger-text: #ffffff;
+
+    /* Input theming (used by src/components/ui/Input.jsx + Select.jsx) */
+    --input-bg: #ffffff;
+    --input-border: #cbd5f5;
+    --input-text: #0f172a;
+    --input-label-text: #475569;
+    --input-placeholder: #94a3b8;
+  }
+
+  .dark {
+    --bg: #020617;
+    --card: #0f172a;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --border: #1e293b;
+    /* Keep chart colors aligned with the existing dark UI */
+    --soft-surface: #1e293b;
+    --chart-axis: #334155;
+    --chart-area-opacity: 0.1;
+    --tooltip-bg: #0f172a;
+    --tooltip-border: #1e293b;
+
+    /* Button theming (kept visually identical to previous dark Tailwind classes) */
+    --btn-primary-bg: #4f46e5;
+    --btn-primary-hover: #4338ca;
+    --btn-primary-text: #ffffff;
+
+    --btn-secondary-bg: #1e293b;
+    --btn-secondary-hover: #334155;
+    --btn-secondary-text: #e2e8f0;
+
+    --btn-outline-border: #334155;
+    --btn-outline-hover-bg: #1e293b;
+    --btn-outline-text: #cbd5e1;
+
+    --btn-ghost-hover-bg: #1e293b;
+    --btn-ghost-text: #cbd5e1;
+
+    --btn-danger-bg: #dc2626;
+    --btn-danger-hover: #b91c1c;
+    --btn-danger-text: #ffffff;
+
+    /* Input theming */
+    --input-bg: #1e293b;
+    --input-border: #334155;
+    --input-text: #ffffff;
+    --input-label-text: #cbd5e1;
+    --input-placeholder: #94a3b8;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
